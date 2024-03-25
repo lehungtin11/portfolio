@@ -109,6 +109,23 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
     // keyboard: true
 })
 
+/*==================== PORTFOLIO SWIPER  ====================*/
+let swiperTestimonial = new Swiper('.testimonial__container', {
+    cssMode: true,
+    loop: true,
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    // mousewheel: true,
+    // keyboard: true
+})
+
 /*==================== CONTACT ====================*/
 function submitFormContact() {
 	document.getElementById("contact__form-send-msg").submit();
