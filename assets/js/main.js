@@ -76,6 +76,11 @@ const modalViews = document.querySelectorAll('.services__modal'),
 
 let modal = function(modalClick) {
     modalViews[modalClick].classList.add('active-modal');
+    modalViews[modalClick].addEventListener('click',function() {
+        modalViews.forEach((modalView) => {
+            modalView.classList.remove('active-modal')
+        })
+    });
 }
 
 modalBtns.forEach((modalBtn, i) => {
