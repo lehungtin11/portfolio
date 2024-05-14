@@ -1029,6 +1029,52 @@ img {
   background-color: var(--text-color-light);
 }
 
+/*========== MAP BOX ==========*/
+#marker {
+  background-image: url('../img/about.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  background-color: black !important;
+  color: white;
+}
+
+.mapboxgl-popup-close-button {
+  color: white;
+}
+
+.mapbox_style {
+  position: absolute;
+  z-index: 10;
+  bottom: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.mapbox_style-active {
+  filter: brightness(0.5);
+}
+
+.mapbox_style__image {
+  border-radius: 3px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {

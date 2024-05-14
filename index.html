@@ -22,6 +22,10 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
+        <!-- =================== MapBox ================= -->
+        <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+        
         <title>Hung Tin Le (lehungtin11)</title>
         <script type="application/ld+json">
             {
@@ -967,6 +971,14 @@
                                 <h3 class="contact__title">Location</h3>
                                 <span class="contact__subtitle">172 Ta Uyen, Ward 6, District 11, Ho Chi Minh City</span>
                             </div>
+                            
+                        </div>
+
+                        <div class="contact__information" style="width: 100%; height: 300px; position: relative;">
+                            <div id="satellite" class="mapbox_style">
+                                <img class="mapbox_style__image" src="assets/img/satellite.png" alt="Mapbox Satellite Streets">
+                            </div>
+                            <div id="map" style="width: 100%; height: 100%;"></div>
                         </div>
                     </div>
 
@@ -1051,7 +1063,7 @@
                         </a>
                     </div>
                 </div>
-
+                
                 <p class="footer__copy">&#169 Hung Tin Le. All right reserved</p>
             </div>
         </footer>
@@ -1066,5 +1078,8 @@
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
+
+        <!--==================== MAP BOX JS ====================-->
+        <script src="assets/js/mapBox.js"></script>
     </body>
 </html>
