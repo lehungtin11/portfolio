@@ -11,20 +11,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#007aff" />
-        
 
-        <!--==================== UNICONS ====================-->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!--==================== Priority fonts ====================-->
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" as="style" crossorigin="anonymous">
+        <link rel="preload" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" as="style" crossorigin="anonymous">
         
         <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <!-- <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> -->
 
-        <!-- =================== MapBox ================= -->
-        <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
-        <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        
+        <!--==================== Google ====================-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" crossorigin="anonymous">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" crossorigin="anonymous">
+        
         
         <title>Hung Tin Le (lehungtin11)</title>
         <script type="application/ld+json">
@@ -102,7 +106,7 @@
                     <i class="uil uil-moon change-theme" id="theme-button"></i>
 
                     <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
+                        <i class="uil uil-apps" aria-label="nav toggle"></i>
                     </div>
                 </div>
             </nav>
@@ -115,15 +119,15 @@
                 <div class="home__container container grid">
                     <div class="home__content grid">
                         <div class="home__social">
-                            <a href="https://www.linkedin.com/in/lehungtin11" target="_blank" class="home__social-icon">
+                            <a href="https://www.linkedin.com/in/lehungtin11" target="_blank" class="home__social-icon" aria-label="link linkedin">
                                 <i class="uil uil-linkedin-alt"></i>
                             </a>
 
-                            <a href="https://github.com/lehungtin11" target="_blank" class="home__social-icon">
+                            <a href="https://github.com/lehungtin11" target="_blank" class="home__social-icon" aria-label="link github">
                                 <i class="uil uil-github-alt"></i>
                             </a>
 
-                            <a href="https://www.facebook.com/Lee.j0han" target="_blank" class="home__social-icon">
+                            <a href="https://www.facebook.com/Lee.j0han" target="_blank" class="home__social-icon" aria-label="link facebook">
                                 <i class="uil uil-facebook-messenger-alt"></i>
                             </a>
 
@@ -143,14 +147,14 @@
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
 
-                                    <image class="home__blob-img" x='20' y='-20' xlink:href="assets/img/perfil.png"/>
+                                    <image fetchPriority="high" width="170px" class="home__blob-img" x='20' y='-20' xlink:href="assets/img/perfil.png" alt="perfil image"/>
                                 </g>
                             </svg>                            
                         </div>
 
                         <div class="home__data">
                             <h1 class="home__title">Hi, I'am Tin</h1>
-                            <h3 class="home__subtitle">Software developer</h3>
+                            <h2 class="home__subtitle">Software developer</h2>
                             <p class="home__description">High level experience in web and app development knowledge, producing quality work.</p>
                             <a href="#contact" class="button button--flex">
                                 Contact Me <i class="uil uil-message button__icon"></i>
@@ -173,7 +177,7 @@
                 <h2 class="section__title">About Me</h2>
                 <span class="section__subtitle">My introduction</span>
                 <div class="about__container container grid">
-                    <img src="assets/img/about.png" alt="About" class="about__img">
+                    <img loading="lazy" src="assets/img/about.png" alt="About" class="about__img">
 
                     <div class="about__data">
                         <p class="about__description">Software developer, with extensive knowledge and years of experience, working in web & app
@@ -402,55 +406,55 @@
                     <div class="skills__languages-and-tools__contents">
                         <p align="center">
                             <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
-                                <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40" />
+                                <img loading="lazy" src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40" />
                             </a>
                             <a href="https://nodejs.org/" target="_blank" rel="noreferrer">
-                                <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" alt="nodejs" width="40" height="40" />
+                                <img loading="lazy" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" alt="nodejs" width="40" height="40" />
                             </a>
-                            <a href="https://www.chartjs.org" target="_blank" rel="noreferrer"> <img
+                            <a href="https://www.chartjs.org" target="_blank" rel="noreferrer"> <img loading="lazy"
                                     src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" width="40" height="40" /> </a> <a
-                                href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img
+                                href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img loading="lazy"
                                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
                                     alt="docker" width="40" height="40" /> </a> <a href="https://git-scm.com/" target="_blank"
                                 rel="noreferrer">
-                                <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40" />
+                                <img loading="lazy" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40" />
                             </a>
-                            <a href="https://dotnet.microsoft.com" target="_blank" rel="noreferrer"> <img
+                            <a href="https://dotnet.microsoft.com" target="_blank" rel="noreferrer"> <img loading="lazy"
                                     src="https://www.vectorlogo.zone/logos/dotnet/dotnet-vertical.svg" alt="dotnet"
                                     width="40" height="40" /> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                                target="_blank" rel="noreferrer"> <img
+                                target="_blank" rel="noreferrer"> <img loading="lazy"
                                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
                                     alt="javascript" width="40" height="40" /> </a> <a href="https://www.linux.org/" target="_blank"
-                                rel="noreferrer"> <img
+                                rel="noreferrer"> <img loading="lazy"
                                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
                                     alt="linux" width="40" height="40" /> </a> <a href="https://www.microsoft.com/en-us/sql-server"
-                                target="_blank" rel="noreferrer"> <img
+                                target="_blank" rel="noreferrer"> <img loading="lazy"
                                     src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40"
                                     height="40" /> </a>
-                                <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img
+                                <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img loading="lazy"
                                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
                                     alt="mysql" width="40" height="40" />
                                 </a>
                                 <a href="https://www.mongodb.com" target="_blank"
                                 rel="noreferrer">
-                                <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="mongodb" width="40"
+                                <img loading="lazy" src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="mongodb" width="40"
                                     height="40" />
                                 </a>
                                 <a href="https://www.nginx.com" target="_blank"
                                 rel="noreferrer">
-                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg"
+                                <img loading="lazy" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg"
                                     alt="nginx" width="40" height="40" /> </a>
                                 <a href="https://www.python.org/" target="_blank" rel="noreferrer">
-                                    <img src="https://www.vectorlogo.zone/logos/python/python-vertical.svg" alt="python" width="40" height="40" />
+                                    <img loading="lazy" src="https://www.vectorlogo.zone/logos/python/python-vertical.svg" alt="python" width="40" height="40" />
                                 </a>
                                 <a href="https://postman.com" target="_blank"
                                 rel="noreferrer">
-                                <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40"
+                                <img loading="lazy" src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40"
                                     height="40" />
-                            </a> <a href="https://www.rabbitmq.com" target="_blank" rel="noreferrer"> <img
+                            </a> <a href="https://www.rabbitmq.com" target="_blank" rel="noreferrer"> <img loading="lazy"
                                     src="https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg" alt="rabbitMQ" width="40"
                                     height="40" />
-                            </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img
+                            </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img loading="lazy"
                                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
                                     alt="react" width="40" height="40" /> </a> 
                         </p>
@@ -770,12 +774,12 @@
                 <h2 class="section__title">Portfolio</h2>
                 <span class="section__subtitle">Most recent work</span>
 
-                <div class="portfolio__container container swiper-container">
+                <div class="portfolio__container container swiper-container swiper">
                     <div class="swiper-wrapper">
                         <!--==================== PORTFOLIO 1 ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio1.jpg" alt="Portfolio" class="portfolio__img">
-
+                            <img loading="lazy" src="assets/img/portfolio1.jpg" alt="Portfolio" class="portfolio__img">
+                            
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">CRM for Banking</h3>
                                 <p class="portfolio__description">Empowered operations staff with a comprehensive management tool for records,
@@ -790,7 +794,7 @@
 
                         <!--==================== PORTFOLIO 2 ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio2.jpg" alt="Portfolio" class="portfolio__img">
+                            <img loading="lazy" src="assets/img/portfolio2.jpg" alt="Portfolio" class="portfolio__img">
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Debt Collections Center</h3>
@@ -805,7 +809,7 @@
 
                         <!--==================== PORTFOLIO 4 ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio4.jpg" alt="Portfolio" class="portfolio__img">
+                            <img loading="lazy" src="assets/img/portfolio4.jpg" alt="Portfolio" class="portfolio__img">
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Telesales Center</h3>
@@ -820,7 +824,7 @@
 
                         <!--==================== PORTFOLIO 5 ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio5.jpg" alt="Portfolio" class="portfolio__img">
+                            <img loading="lazy" src="assets/img/portfolio5.jpg" alt="Portfolio" class="portfolio__img">
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">TH True Milk</h3>
@@ -862,7 +866,7 @@
                             </a>
                         </div>
 
-                        <img src="assets/img/project.png" alt="Project" class="project__img">
+                        <img loading="lazy" src="assets/img/perfil.png" alt="Project" class="project__img">
                     </div>
                 </div>
             </section>
@@ -872,11 +876,11 @@
                 <h2 class="section__title">Achievement</h2>
                 <span class="section__subtitle">I am recognized as</span>
 
-                <div class="portfolio__container container swiper-container">
+                <div class="portfolio__container container swiper-container swiper">
                     <div class="swiper-wrapper">
 
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/achievement1.png" alt="Achievement" class="portfolio__img">
+                            <img loading="lazy" width="320px" src="assets/img/achievement1.png" alt="Achievement" class="portfolio__img">
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">
@@ -900,7 +904,7 @@
 
 
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/degree3.jpg" alt="degree3" class="portfolio__img">
+                            <img loading="lazy" width="320px" src="assets/img/degree3.jpg" alt="degree3" class="portfolio__img"/>
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">
@@ -976,7 +980,7 @@
 
                         <div class="contact__information" style="width: 100%; height: 300px; position: relative;">
                             <div id="satellite" class="mapbox_style">
-                                <img class="mapbox_style__image" src="assets/img/satellite.png" alt="Mapbox Satellite Streets">
+                                <img loading="lazy" class="mapbox_style__image" src="assets/img/satellite.png" alt="Mapbox Satellite Streets">
                             </div>
                             <div id="map" style="width: 100%; height: 100%;"></div>
                         </div>
@@ -993,23 +997,23 @@
 
                         <div class="contact__inputs grid">
                             <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
+                                <label for="name" class="contact__label">Name</label>
                                 <input type="text" name="name" class="contact__input">
                             </div>
 
                             <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
+                                <label for="email" class="contact__label">Email</label>
                                 <input type="email" name="email" class="contact__input">
                             </div>
                         </div>
 
                         <div class="contact__content">
-                            <label for="" class="contact__label">Company</label>
+                            <label for="company" class="contact__label">Company</label>
                             <input type="text" name="company" class="contact__input">
                         </div>
 
                         <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
+                            <label for="message" class="contact__label">Message</label>
                             <textarea id="" cols="0" rows="7" name="message" class="contact__input"></textarea>
                         </div>
 
@@ -1050,15 +1054,15 @@
                     </ul>
 
                     <div class="footer__socials">
-                        <a href="https://www.facebook.com/Lee.j0han" target="_blank" class="footer__social">
+                        <a href="https://www.facebook.com/Lee.j0han" target="_blank" class="footer__social" aria-label="footer link facebook">
                             <i class="uil uil-facebook-f"></i>
                         </a>
 
-                        <a href="https://www.instagram.com/le_hung_tin" target="_blank" class="footer__social">
+                        <a href="https://www.instagram.com/le_hung_tin" target="_blank" class="footer__social" aria-label="footer link instagram">
                             <i class="uil uil-instagram"></i>
                         </a>
 
-                        <a href="https://twitter.com/lehungtin11" target="_blank" class="footer__social">
+                        <a href="https://twitter.com/lehungtin11" target="_blank" class="footer__social" aria-label="footer link twitter">
                             <i class="uil uil-twitter-alt"></i>
                         </a>
                     </div>
@@ -1074,12 +1078,9 @@
         </a>
 
         <!--==================== SWIPER JS ====================-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!-- <script src="assets/js/swiper-bundle.min.js"></script> -->
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
-
-        <!--==================== MAP BOX JS ====================-->
-        <script src="assets/js/mapBox.js"></script>
     </body>
 </html>
